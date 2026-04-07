@@ -1,8 +1,13 @@
 from faster_whisper import WhisperModel
 import os
+import streamlit as st
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
-model = WhisperModel("base",device="cpu",compute_type="int8")
+@st.cache_resource
+def load_model():
+    return WhisperModel("tiny", device="cpu", compute_type="int8")
+
+model = load_model()
 
 def transcribe_audio(audio_path:str):
     """
