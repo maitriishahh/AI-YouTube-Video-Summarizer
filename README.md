@@ -3,6 +3,7 @@
 
 AI YouTube Video Summarizer is an end-to-end **GenAI + Retrieval-Augmented Generation (RAG)** application that converts long-form YouTube videos and audio files into structured notes and enables cross-video knowledge querying with grounded, hallucination-resistant answers.
 
+**Live App:** https://ai-youtube-video--summarizer.streamlit.app/
 
 
 ## 🚀 Features
